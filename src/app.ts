@@ -12,7 +12,7 @@ app.use("/api/products", productRoutes);
 app.use("/api/orders", orderRoutes);
 
 app.get("/", (req: Request, res: Response) => {
-  res.send("Hello World assignment 2!");
+  res.send("Hello World!");
 });
 app.all("*", (req: Request, res: Response) => {
   res.status(404).json({

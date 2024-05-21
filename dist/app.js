@@ -13,7 +13,7 @@ app.use((0, cors_1.default)());
 app.use("/api/products", product_route_1.productRoutes);
 app.use("/api/orders", order_route_1.orderRoutes);
 app.get("/", (req, res) => {
-    res.send("Hello World assignment 2!");
+    res.send("Hello World!");
 });
 app.all("*", (req, res) => {
     res.status(404).json({
